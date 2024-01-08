@@ -1,0 +1,69 @@
+@import '02_variables', '03_mixin';
+
+.third-section {
+    @include maxWidthMargin0Auto (1200px);
+    height: 1102px;
+    
+
+    article {
+        @include displayFlexRowSpaceBetween;
+        align-items: center;
+        height: 100%;
+
+        .left-third-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+
+            .help-business-title {
+                max-width: 360px;
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
+
+            .help-business-p {
+                color: $greyDark;
+                font-size: 1rem;
+                max-width: 400px;
+            }
+        }
+
+        .right-third-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px;
+            grid-template-rows: repeat(2, 1fr);
+            position: relative;
+          
+            .business{
+                grid-column: 1;
+                grid-row: 1/2;
+                @include boxPreset(#f1f7ff);
+                position: absolute;
+                top: 10px;
+
+            }
+
+            .development {
+                grid-column: 1;
+                grid-row: 2;
+                @include boxPreset(#fff2f8);
+            }
+
+            .financial {
+                grid-column: 2;
+                grid-row: 1;
+                @include boxPreset(#fff7e3);
+            }
+
+            .market {
+                grid-column: 2;
+                grid-row: 2;
+                @include boxPreset(#deffee);
+            }
+
+            
+        }
+    }
+}

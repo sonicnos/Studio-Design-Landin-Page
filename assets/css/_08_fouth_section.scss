@@ -1,0 +1,51 @@
+@import '02_variables', '03_mixin';
+
+.fourth-section {
+    @include maxWidthMargin0Auto (1200px);
+    @include displayFlexRowSpaceBetween;
+    .video{
+        position: relative;
+        iframe{
+            border-radius: 32px;
+            
+        }
+
+    }
+
+    .video::after{ 
+        @include positioningAfterBefore;
+        background-image: url(../images/Ellipse4.png);
+        width: 129px;
+        height: 129px;
+        top: 243px;
+        left: 463px;
+
+    }
+
+
+    .fourth-section-right {
+
+        .title {
+            position: relative;
+            font-size: 2.5rem;
+            max-width: 470px;
+            margin-bottom: 30px;
+        }
+
+        .title::before {
+            @include positioningAfterBefore;
+            background-image: url(../images/Rectangle4.png);
+            width: 178px;
+            height: 178px;
+            top: -14px;
+            left: -38px;
+
+        }
+        .description {
+            max-width: 540px;
+            color: $greyDark;
+            font-size: 1rem;
+            line-height: 160%;
+        }
+    }
+}

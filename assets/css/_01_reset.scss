@@ -1,0 +1,25 @@
+@import '02_variables';
+
+@font-face {
+    font-family: "Averta Demo PE Cutted Demo";
+    src: url("../font/FontsFree-Net-AvertaDemoPECuttedDemo-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

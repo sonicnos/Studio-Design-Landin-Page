@@ -1,0 +1,10 @@
+@import '01_reset','02_variables','03_mixin','04_header','05_first-section',
+        '06_second-section', '07_third-section', '08_fouth_section',
+        '09_fifth-section';
+
+body {
+    background-color: $white;
+    font-family: "Averta Demo PE Cutted Demo";
+    height: 100vh;
+    padding-top: 42px;
+}
